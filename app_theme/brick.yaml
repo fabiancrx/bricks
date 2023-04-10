@@ -1,0 +1,20 @@
+name: app_theme
+description: A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, theme, icons and useful extensions.
+repository: https://github.com/fabiancrx/bricks/tree/main/app_theme
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.48 <0.1.0"
+
+vars:
+  package_name:
+    type: string
+    description: Name of the package
+    default: app_theme
+    prompt: Name of the package
+  short_name:
+    type: string
+    description: Short name to prepend to classes
+    default: app
+    prompt: Package short name

@@ -1,0 +1,26 @@
+name: {{package_name.snakeCase()}}_theme
+description: {{package_name.pascalCase()}} custom theme and ui
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  # SVG file drawing, used by Asset Images
+  flutter_svg: ^2.0.4
+  # Sensible defaults for flutter theming
+  flex_color_scheme: ^7.0.0
+  # Easily access the MediaQuery sizing info directly on the build context
+  sized_context: ^1.0.0+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
