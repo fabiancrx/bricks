@@ -15,15 +15,14 @@ from the rest of the application.
     ├── lib
     │   ├── {{short_name.snakeCase()}}_theme.dart
     │   ├── ui
-    │   │   ├── colors.dart
-    │   │   ├── device.dart
     │   │   ├── assets.dart
+    │   │   ├── color.dart
+    │   │   ├── device.dart
     │   │   ├── theme.dart
     │   │   └── typography.dart
     │   └──widgets
     ├── pubspec.yaml
     └── README.md
-
 ```
 
 ## Colors
