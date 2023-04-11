@@ -62,8 +62,8 @@ class {{short_name.pascalCase()}}Theme {
 }
 
 const FlexSchemeData _appFlexScheme = FlexSchemeData(
-  name: '{{short_name.pascalCase()}}',
-  description: '{{short_name.pascalCase()}} custom  theme',
+  name: '{{package_name.pascalCase()}}',
+  description: '{{package_name.pascalCase()}} custom  theme',
   light: FlexSchemeColor(
     primary: {{short_name.pascalCase()}}Color.primary,
     primaryContainer: {{short_name.pascalCase()}}Color.container,
