@@ -19,21 +19,20 @@ A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, 
 
 ### File Structure
 ```
-└── packages
-    └── app_theme_theme
-        ├── analysis_options.yaml
-        ├── assets
-        ├── lib
-        │   ├── app_theme.dart
-        │   └── ui
-        │       ├── assets.dart
-        │       ├── colors.dart
-        │       ├── device.dart
-        │       ├── theme.dart
-        │       ├── typography.dart
-        │       └── widgets
-        │           ├── screen_builder.dart
-        │           └── widgets.dart
-        ├── pubspec.yaml
-        └── README.md
+ └── app_theme
+     ├── analysis_options.yaml
+     ├── assets
+     ├── lib
+     │   ├── app_theme.dart
+     │   └── ui
+     │       ├── assets.dart
+     │       ├── colors.dart
+     │       ├── device.dart
+     │       ├── theme.dart
+     │       ├── typography.dart
+     │       └── widgets
+     │           ├── screen_builder.dart
+     │           └── widgets.dart
+     ├── pubspec.yaml
+     └── README.md
 ```

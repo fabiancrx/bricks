@@ -1,4 +1,4 @@
-name: {{package_name.snakeCase()}}_theme
+name: {{package_name.snakeCase()}}
 description: {{package_name.pascalCase()}} custom theme and ui
 publish_to: 'none'
 version: 0.1.0+1

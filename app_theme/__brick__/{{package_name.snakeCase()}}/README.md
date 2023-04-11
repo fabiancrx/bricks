@@ -9,11 +9,11 @@ from the rest of the application.
 ## File Structure 
 
 ```
-└── {{package_name.snakeCase()}}_theme
+└── {{package_name.snakeCase()}}
     ├── analysis_options.yaml
     ├── assets
     ├── lib
-    │   ├── {{short_name.snakeCase()}}_theme.dart
+    │   ├── {{short_name.snakeCase()}}.dart
     │   ├── ui
     │   │   ├── assets.dart
     │   │   ├── color.dart
