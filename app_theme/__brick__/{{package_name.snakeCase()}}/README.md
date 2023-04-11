@@ -1,14 +1,25 @@
 # {{package_name.titleCase()}} UI package
 
-{{package_name.titleCase()}} UI package containing a general design system.
+{{package_name.titleCase()}} UI package containing a bare-bones design system.
 
 This package is intended to house UI constant and utilities (created by this brick),
 and your custom widgets created by you so there is a clean separation of the presentation layer
 from the rest of the application.
 
-## File Structure 
+## File Structure
 
 ```
+{{#createPlayground}}
+├── {{package_name.snakeCase()}}_playground
+│   ├── lib
+│   │   └── main.dart
+│   ├── linux
+│   ├── macos
+│   ├── pubspec.lock
+│   ├── pubspec.yaml
+│   ├── README.md
+│   └── windows
+{{\createPlayground}}
 └── {{package_name.snakeCase()}}
     ├── analysis_options.yaml
     ├── assets
@@ -25,20 +36,52 @@ from the rest of the application.
     └── README.md
 ```
 
-## Colors
+## TLDR
 
-Here we store the single source of truth of {{package_name.titleCase()}} color palette.
-The app theme should be created from these colors.
+### {{package_name.snakeCase()}}
 
-> Initial values should be modified to meet the project colors requirements.
+`{{package_name.snakeCase()}}`  is generated with sane defaults as a starting point as the package
+that should contain all your presentation logic. Your app should import it in its `pubspec.yaml`:
+
+```yaml
+  {{package_name.snakeCase()}}:
+    path: packages/{{package_name.snakeCase()}}
+```
+
+By doing so you have a default theme, colors, sizing, widgets etc. to kickstart your app.
+One of the main benefits is increased speed, as this is code that should speed up the development process.
+But also modularization due to packaging all the presentation code inside `{{package_name.snakeCase()}}`. 
+
+{{#createPlayground}}
+
+### Playground
+
+This is place to see how the tweaks to your theme affect other material widgets.
+Here you can quickly see the changes in colors, buttons, borders, shapes etc. that some properties of the theme
+have on the material widgets.
+
+[Material Playground demo](https://user-images.githubusercontent.com/37002358/231079783-c79d81b0-7349-4043-8b8b-3b61c5ba83ec.webm)
+
+#### How to use it
+
+Just open the folder that contains the playground and launch it
+
+```sh
+cd {{package_name.snakeCase()}}_playground
+flutter run 
+```
+
+By default, it loads the `{{short_name.pascalCase()}}Theme` theme created at `{{package_name.snakeCase()}}` so you can
+rapidly see how your theme changes affect the material widgets.
+
+{{\createPlayground}}
 
 ## Theme
 
 Use {{short_name.pascalCase()}}Theme to share colors and font styles to all widgets in the app by providing a ThemeData
 to the App constructor.
 We use the colors from `{{short_name.pascalCase()}}Color` and the [FlexColorScheme][flex_color_scheme] package
-to make a beautiful material design based color scheme with sane defaults.
-We can further customize the generated {{short_name.pascalCase()}}Theme.
+to make a beautiful material design based apps with sane defaults.
 
 > See https://docs.flexcolorscheme.com/ for an in depth documentation of FlexColorScheme.
 
@@ -50,6 +93,13 @@ theme: theme.light,
 darkTheme: theme.dark,
 ...
 ```
+
+## Colors
+
+Here we store the single source of truth of {{package_name.titleCase()}} color palette.
+The app theme should be created from these colors and maintain the same naming convention  as the design spec.
+
+> Initial values should be modified to meet the project colors requirements.
 
 ## Device
 
@@ -117,19 +167,21 @@ You can add assets inside {{short_name.pascalCase()}}Assets class and use them t
 ```dart
 AppBar(leading: const {{short_name.pascalCase()}}Assets.logo);
 ```
-{{#createPlayground}}
-
-## Playground
-
-This is  place to tweak your theme and see how it affects other material widgets.
-
-The developer can see the difference in colors, buttons and other widgets according to the theme chosen.
-
-
-[Material Playground demo](https://user-images.githubusercontent.com/37002358/231079783-c79d81b0-7349-4043-8b8b-3b61c5ba83ec.webm)
-
-{{\createPlayground}}
 
 [flex_color_scheme]: https://pub.dev/packages/flex_color_scheme
 
 [platform_crash_on_web]: https://github.com/flutter/flutter/issues/50845
+
+
+## Additional information
+
+This package is supposed to give you a starting point, but no two design systems are the same and as such, you're
+encouraged to tweak {{package_name.snakeCase()}} to your liking, by adding or removing attributes and files as 
+you deem fit.
+
+{{#createPlayground}}
+The `{{package_name.snakeCase()}}_playground` is a place to test your theme with the material widgets shipped with flutter, 
+but it's not meant to be customized. If you also want to check how theme changes affect your custom widgets 
+give [widgetbook](https://www.widgetbook.io/) a try, its open source and specifically tailored to that use case.
+It also has a [brick](https://brickhub.dev/bricks/widgetbook_starter) available.
+{{/createPlayground}}
