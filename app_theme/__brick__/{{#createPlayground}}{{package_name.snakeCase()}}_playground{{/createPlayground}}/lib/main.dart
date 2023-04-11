@@ -1,4 +1,4 @@
-import 'package:{{package_name.snakeCase()}}/{{short_name.snakeCase()}}.dart';
+import 'package:{{package_name.snakeCase()}}/{{package_name.snakeCase()}}.dart';
 import 'package:flutter/material.dart';
 import 'package:material_playground/material_playground.dart';
 
@@ -19,9 +19,10 @@ class _DemoAppState extends State<DemoApp> {
       themeMode = mode;
     });
   }
-  const theme = {{short_name.pascalCase()}}Theme();
+
   @override
   Widget build(BuildContext context) {
+      const theme = {{short_name.pascalCase()}}Theme();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Copy Playground',

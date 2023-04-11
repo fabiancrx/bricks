@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:{{package_name.snakeCase()}}/{{short_name.snakeCase()}}.dart';
+import 'package:{{package_name.snakeCase()}}/{{package_name.snakeCase()}}.dart';
 
 /// Provides a builder function for different screen sizes
 ///

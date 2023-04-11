@@ -13,3 +13,5 @@ dependencies:
   app_theme:
     path: ../{{package_name.snakeCase()}}
 
+flutter:
+  uses-material-design: true
