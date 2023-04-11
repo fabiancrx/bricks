@@ -117,6 +117,18 @@ You can add assets inside {{short_name.pascalCase()}}Assets class and use them t
 ```dart
 AppBar(leading: const {{short_name.pascalCase()}}Assets.logo);
 ```
+{{#createPlayground}}
+
+## Playground
+
+This is  place to tweak your theme and see how it affects other material widgets.
+
+The developer can see the difference in colors, buttons and other widgets according to the theme chosen.
+
+
+[Material Playground demo](https://user-images.githubusercontent.com/37002358/231079783-c79d81b0-7349-4043-8b8b-3b61c5ba83ec.webm)
+
+{{\createPlayground}}
 
 [flex_color_scheme]: https://pub.dev/packages/flex_color_scheme
 
