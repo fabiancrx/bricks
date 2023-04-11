@@ -49,7 +49,7 @@ that should contain all your presentation logic. Your app should import it in it
 ```
 
 By doing so you have a default theme, colors, sizing, widgets etc. to kickstart your app.
-One of the main benefits is increased speed, as this is code that should speed up the development process.
+One of the main benefits is increased speed.
 But also modularization due to packaging all the presentation code inside `{{package_name.snakeCase()}}`. 
 
 {{#createPlayground}}

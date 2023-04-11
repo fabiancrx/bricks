@@ -4,6 +4,12 @@
 
 A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, theme, icons and useful extensions.
 
+## Features
+
+Default theme, colors, sizing, widgets etc. to kickstart your app.
+One of the main benefits is increased speed.
+But also modularization due to packaging all the presentation code.
+
 ## Getting Started 🚀
 
 1. Initialize mason `mason init`
@@ -12,10 +18,11 @@ A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, 
 
 ### Variables 
 
-| variable       | description               | default   | type     |
-|----------------|---------------------------|-----------|----------|
-| `package_name` | name of the package       | app_theme | `string` |
-| `short_name`   | short name of the package | app       | `string` |
+| variable               | description                                                                 | default   | type      |
+|------------------------|-----------------------------------------------------------------------------|-----------|-----------|
+| `package_name`         | name of the package                                                         | app_theme | `string`  |
+| `short_name`           | short name of the package                                                   | app       | `string`  |
+| `createPlayground`     | A place to tweak your theme and see how it affects other material widgets.  | false     | `boolean` |
 
 ### File Structure
 ```
@@ -35,4 +42,24 @@ A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, 
      │           └── widgets.dart
      ├── pubspec.yaml
      └── README.md
+```
+
+### Optional playground
+
+Here you can quickly see the changes in colors, buttons, borders, shapes etc. that some properties of the theme
+have on the material widgets.
+
+[Material Playground demo](https://user-images.githubusercontent.com/37002358/231079783-c79d81b0-7349-4043-8b8b-3b61c5ba83ec.webm)
+
+
+```
+├── app_playground
+│   ├── lib
+│   │   └── main.dart
+│   ├── linux
+│   ├── macos
+│   ├── pubspec.lock
+│   ├── pubspec.yaml
+│   ├── README.md
+│   └── windows
 ```
