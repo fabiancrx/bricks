@@ -45,10 +45,4 @@ abstract class {{short_name.pascalCase()}}TextStyle {
   static final TextStyle headline = _default.copyWith(fontSize: 35, fontWeight: FontWeight.w700);
 }
 
-extension TextStyleX on TextStyle {
-  TextStyle get bold => copyWith(fontWeight: FontWeight.bold);
 
-  TextStyle get italic => copyWith(fontStyle: FontStyle.italic);
-
-  TextStyle color(Color color) => copyWith(color: color);
-}

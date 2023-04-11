@@ -3,6 +3,7 @@ export 'ui/device.dart';
 export 'ui/assets.dart';
 export 'ui/theme.dart';
 export 'ui/typography.dart';
+export 'ui/extensions.dart';
 export 'ui/widgets/widgets.dart';
 
 // Packages
