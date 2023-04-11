@@ -1,0 +1,15 @@
+name: {{package_name.snakeCase()}}_playground
+description: A place to tweak your theme and see how it affects material widgets.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.0
+
+dependencies:
+  material_playground:
+    git: https://github.com/fabiancrx/material_playground
+  app_theme:
+    path: ../{{package_name.snakeCase()}}
+
