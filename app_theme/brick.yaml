@@ -19,7 +19,7 @@ vars:
     default: app
     prompt: Package short name
   createPlayground:
-    type: bool
+    type: boolean
     description: A place to tweak your theme and see how it affects other material widgets.
     default: false
     prompt: Generate widgets theme playground
