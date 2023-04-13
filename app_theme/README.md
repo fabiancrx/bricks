@@ -51,6 +51,9 @@ have on the material widgets.
 
 [Material Playground demo](https://user-images.githubusercontent.com/37002358/231079783-c79d81b0-7349-4043-8b8b-3b61c5ba83ec.webm)
 
+> Special thanks to [rydmike](https://github.com/rydmike) for the playground code
+
+### Playground Structure
 
 ```
 ├── app_playground

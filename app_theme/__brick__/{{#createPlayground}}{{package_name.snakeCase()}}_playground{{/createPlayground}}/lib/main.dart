@@ -25,7 +25,7 @@ class _DemoAppState extends State<DemoApp> {
       const theme = {{short_name.pascalCase()}}Theme();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Copy Playground',
+      title: '{{package_name.titleCase()}} Playground',
       theme: theme.light,
       darkTheme: theme.dark,
       themeMode: themeMode,
