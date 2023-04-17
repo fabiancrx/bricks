@@ -12,9 +12,17 @@ But also modularization due to packaging all the presentation code.
 
 ## Getting Started 🚀
 
-1. Initialize mason `mason init`
-2. Add package `mason add app_theme` to mason
-3. Generate the package `mason make app_theme`
+**Using the brick while in BETA**
+1. Install mason_cli
+```sh
+dart pub global activate mason_cli
+```
+2. Inside the folder in which you want the code generated
+```sh
+mason init 
+mason add app_theme --git-url https://github.com/fabiancrx/bricks --git-path app_theme
+mason make app_theme
+```
 
 ### Variables 
 
