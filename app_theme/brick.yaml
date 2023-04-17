@@ -2,7 +2,7 @@ name: app_theme
 description: A brick to bootstrap your apps UI by packaging colors, typography, breakpoints, theme, assets, extensions and widgets.
 repository: https://github.com/fabiancrx/bricks/tree/main/app_theme
 
-version: 0.2.1+4
+version: 0.2.2+5
 
 environment:
   mason: ">=0.1.0-dev.48 <0.1.0"
@@ -21,5 +21,5 @@ vars:
   createPlayground:
     type: boolean
     description: A place to tweak your theme and see how it affects other material widgets.
-    default: false
+    default: true
     prompt: Generate widgets theme playground

@@ -9,7 +9,9 @@ environment:
 
 dependencies:
   material_playground:
-    git: https://github.com/fabiancrx/material_playground
+    git:
+      url: https://github.com/fabiancrx/material_playground
+      ref: e11a85f
   app_theme:
     path: ../{{package_name.snakeCase()}}
 

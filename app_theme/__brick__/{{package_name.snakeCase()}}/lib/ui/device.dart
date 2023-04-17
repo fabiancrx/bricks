@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -120,7 +121,30 @@ class Sizes {
   static const lg = unit;
   static const xl = 1.5 * unit;
   static const xxl = 2 * unit;
+
+  /// Edge insets and margins for phone breakpoint size.
+  static const double edgeInsetsPhone = sm;
+
+  /// Edge insets and margins for tablet breakpoint size.
+  static const double edgeInsetsTablet = md;
+
+  /// Edge insets and margins for desktop and medium desktop breakpoint sizes.
+  static const double edgeInsetsDesktop = xl;
+
+  static double responsiveInsets(BuildContext context) {
+    final screen = context.screenSize();
+
+    switch (screen) {
+      case ScreenSize.mobile:
+        return edgeInsetsPhone;
+      case ScreenSize.tablet:
+        return edgeInsetsTablet;
+      case ScreenSize.desktop:
+        return edgeInsetsDesktop;
+    }
+  }
 }
+
 
 /// Workaround to securely asses the underlying Operating System in which the flutter app is executing
 // See https://github.com/flutter/flutter/issues/50845

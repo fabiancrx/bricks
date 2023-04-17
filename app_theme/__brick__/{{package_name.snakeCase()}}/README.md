@@ -109,6 +109,8 @@ This is one of the most useful parts of the package, here we have some utilities
 
 Here we have constants for consistent spacing and padding. Eg:
 `Padding(padding: EdgeInsets.all(Sizes.sm));`
+or even better use the `responsiveInsets` method that scales the padding with the screen size.
+`Padding(padding: EdgeInsets.all(Sizes.responsiveInsets(context)));`
 
 ### Device Platform
 

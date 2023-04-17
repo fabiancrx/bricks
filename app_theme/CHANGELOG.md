@@ -1,3 +1,9 @@
+# 0.2.2+5
+
+- Default to generate the playground
+- Added responsive insets
+- Fix material playground version 
+
 # 0.2.1+4
 
 - Set MIT as project license

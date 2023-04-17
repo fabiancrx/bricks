@@ -44,5 +44,3 @@ abstract class {{short_name.pascalCase()}}TextStyle {
 
   static final TextStyle headline = _default.copyWith(fontSize: 35, fontWeight: FontWeight.w700);
 }
-
-
