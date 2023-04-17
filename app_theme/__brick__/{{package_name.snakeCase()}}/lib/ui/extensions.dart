@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 /// Adds extensions to num  to make creating durations more succint:
 ///
 /// ```
